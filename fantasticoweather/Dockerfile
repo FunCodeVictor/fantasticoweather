@@ -1,12 +1,12 @@
 FROM node:18-alpine
 
-WORKDIR /app
+WORKDIR /fantasticoweather
 
-COPY package.json .
+COPY package.json /fantasticoweather/
 
 RUN npm install
 
-COPY . .
+COPY . /fantasticoweather/
 
 EXPOSE 3000
 

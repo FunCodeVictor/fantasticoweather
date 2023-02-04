@@ -1,11 +1,12 @@
 version: '3.8'
 services:
-  fantasticoweather:
+  worker:
     build: ./fantasticoweather
     container_name: fantasticoweather
     ports:
       - '3000:3000'
     volumes:
-      - ./fantasticoweather:/app
+      - ./fantasticoweather/:/fantasticoweather/
+      - /fantasticoweather/node_modules
     stdin_open: true
     tty: true
