@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  fantasticoweather:
+    build: ./fantasticoweather
+    container_name: fantasticoweather
+    ports:
+      - '3000:3000'
+    volumes:
+      - ./fantasticoweather:/app
+    stdin_open: true
+    tty: true
