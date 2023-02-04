@@ -32,7 +32,7 @@ const WeatherWidget: React.FC<WeatherWidgetProps> = (props) => {
 						<li className="list-group-item">
 							{WEATHER_WIDGET_TEMPERATURE}{' '}
 							<b>
-								{props.temperature} {WEATHER_WIDGET_TEMPERATURE2}
+								{props.temperature}{WEATHER_WIDGET_TEMPERATURE2}
 							</b>
 						</li>
 						<li className="list-group-item">

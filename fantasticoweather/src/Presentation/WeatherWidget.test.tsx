@@ -1,7 +1,7 @@
 import { render } from '@testing-library/react';
 import WeatherWidget from './WeatherWidget';
 import each from 'jest-each';
-import { WEATHER_WIDGET_HUMIDITY, WEATHER_WIDGET_TEMPERATURE, WEATHER_WIDGET_WIND } from '../constants/strings';
+import { WEATHER_WIDGET_HUMIDITY, WEATHER_WIDGET_TEMPERATURE, WEATHER_WIDGET_TEMPERATURE2, WEATHER_WIDGET_WIND } from '../constants/strings';
 
 describe('Weather widget tests', () => {
 	each([
@@ -19,7 +19,7 @@ describe('Weather widget tests', () => {
 			const groupItems = document.querySelectorAll('.list-group-item');
 			expect(groupItems).not.toBeNull();
 			expect(groupItems.length).toBe(5);
-			expect(groupItems[0].textContent).toBe(WEATHER_WIDGET_TEMPERATURE + ' ' + temp);
+			expect(groupItems[0].textContent).toBe(WEATHER_WIDGET_TEMPERATURE + ' ' + temp + WEATHER_WIDGET_TEMPERATURE2);
 			expect(groupItems[1].textContent).toBe(WEATHER_WIDGET_HUMIDITY + ' ' + humid);
 			expect(groupItems[2].textContent).toBe(WEATHER_WIDGET_WIND + ' ' + wind);
 		}
