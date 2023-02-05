@@ -13,15 +13,6 @@ import './WeatherWidget.css';
 const WeatherWidget: React.FC<WeatherWidgetProps> = (props) => {
 	return (
 		<>
-			<head>
-				<title>Weather widget</title>
-				<link
-					rel="stylesheet"
-					href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-					integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-					crossOrigin="anonymous"
-				/>
-			</head>
 			<div id="snowContainer"></div>
 			<div className="widget">
 				<div className="panel panel-info">
@@ -32,7 +23,8 @@ const WeatherWidget: React.FC<WeatherWidgetProps> = (props) => {
 						<li className="list-group-item">
 							{WEATHER_WIDGET_TEMPERATURE}{' '}
 							<b>
-								{props.temperature}{WEATHER_WIDGET_TEMPERATURE2}
+								{props.temperature}
+								{WEATHER_WIDGET_TEMPERATURE2}
 							</b>
 						</li>
 						<li className="list-group-item">

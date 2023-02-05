@@ -3,9 +3,9 @@
   "name": "Create React App Sample",
   "icons": [
     {
-      "src": "logo192.png",
+      "src": "tv2logo.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "94x49"
     }
   ],
   "start_url": ".",
